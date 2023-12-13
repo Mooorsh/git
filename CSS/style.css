@@ -34,6 +34,7 @@ header{
   text-align: center;
   font-size: 10px;
   color: lightgray;
+  font-family: 'Preahvihear';
 }
 
 .inner-header{
@@ -55,8 +56,7 @@ header{
 nav{
 width: 100%;
   float:right;
-  background-color:black  ;
-  margin-bottom: 10px;
+  background-color:silver  ;
 }
 
 nav ul{
@@ -69,6 +69,7 @@ nav li{
   display: inline-block;
   font-size: 2em;
   font-weight: 800;
+  font-family: 'Preahvihear';
 }
 
 nav li :hover{
@@ -79,7 +80,7 @@ nav li :hover{
 
 nav li a{
   display: block;
-  color: wheat;
+  color: black;
   text-align: center;
   padding: 0.5em 1em;
 }
@@ -91,6 +92,7 @@ main{
   clear: left;
   padding-top: 2em;
   display: block;
+  font-family: 'Rubik Bubbles';
 }
 
 .title{
@@ -101,6 +103,31 @@ main{
   margin-bottom: 15px;
 }
 
+aside{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px black;
+}
+
+
+figure{
+  border: 4px solid #2a1f14;
+  box-shadow: 6px 6px 10px lightblue;
+  max-width: 400px;
+  margin: 2% auto;
+}
+
+figcaption{
+  padding: 2%;
+  border-top: 4px solid #2a1f14;
+  color: white;
+  font-size: 1.15em;
+}
+
+
+
 .container {
   display: grid;
   align-items: center;
@@ -110,6 +137,10 @@ main{
   padding-bottom: 50px;
   padding-left: 15%;
   background-color: grey;
+ }
+
+ .grid{
+  width: 100%;
  }
 
  .text {
@@ -141,7 +172,6 @@ main{
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
   padding-left: 15%;
-  background-color: black;
  }
 
  .text3{
@@ -151,13 +181,13 @@ main{
 
  .text3 h2{
   text-align: center;
-  color: black;
+  color: white;
  }
 
  .text3 p{
   text-align: center;
   font-size: 1.5em;
-  color: black;
+  color: white;
  }
 
 
@@ -217,10 +247,15 @@ Image{
       padding: 0.5em 1em;
       font-size: 1.5em;
       font-weight: 800;
+      font-family: 'Preahvihear';
     }
 
     /*Main Content*/
     .HeroImage{
+      display: none;
+    }
+
+    header{
       display: none;
     }
 
@@ -232,6 +267,25 @@ Image{
       font-size: 1.5em;
     }
 
+    aside {
+      display: none;
+    }
+
+    .list{
+      text-align: center;
+    }
+
+    .list h2{
+      color: white;
+      font-size: 3.0em;
+    }
+
+    ul.a{
+        list-style-type: square white;
+        color: white;
+        font-size: 2.0em;
+    }
+
     .container{
       display: block;
       grid-template-columns: 1fr;
@@ -241,6 +295,25 @@ Image{
        align-items: center;
     }
 
+    .container3{
+      display: block;
+      grid-template-columns: 1fr;
+      padding-top: 25px;
+      padding-bottom: 50px;
+       padding-left: 30px;
+       align-items: center;
+    }
+
+.grid{
+    display: grid;
+  grid-template-columns: 1;
+  grid-gap: 20px;
+}
+
+aside{
+  grid-column: 1 /span 1;
+  font-size: 2em;
+}
     .text {
       padding-left: 0% ;
       width: 95%;
@@ -278,8 +351,14 @@ Image{
       width: 95%;
     }
 
+    .text3 h2{
+      color: white;
+      font-size: 2.0em;
+    }
+
     .text3 p{
       font-size: 1.2em;
+      color: white;
     }
 
     .Image2{
@@ -309,6 +388,9 @@ Image{
    display: block;
   }
 
+  .list{
+    display: none;
+  }
 /*Nav Content*/
 
   nav ul{
@@ -321,6 +403,7 @@ Image{
     display: inline-block;
     font-size: 2em;
     font-weight: 800;
+    font-family: 'Preahvihear';
   }
 
   /*Main Content*/
@@ -339,6 +422,23 @@ Image{
     grid-template-columns: 1fr 1fr ;
     padding-left: 0%;
   }
+
+  .container3{
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
+    padding-left: 0%;
+  }
+
+  .grid{
+  display: grid;
+  grid-template-columns: 2;
+  grid-gap: 10px;
+}
+
+aside{
+  grid-column: 1 /span 2;
+  font-size: 1.5em;
+}
 
 
   .Image1{
@@ -376,11 +476,11 @@ Image{
   }
   .text3 h2{
     font-size: 2.0em;
-    color: black;
+    color: white;
   }
   .text3 p{
     font-size: 1.2em;
-    color: black;
+    color: white;
   }
 
 
@@ -397,16 +497,63 @@ Image{
 }
 
 
+/*Media Query for Print*/
+
+@media print{
+  body{
+    background-color: white;
+    color: black;
+  }
+}
 
 /*Desktop Viewport*/
 
 @media print, screen and (min-width:1000px) and (max-width:2560px) {
 
 
+  body{
+    background: linear-gradient( to left top, grey,black);
+  }
+
+  .grid{
+  display: grid;
+  grid-template-columns: 3;
+  grid-gap: 20px;
+}
+
+aside{
+  grid-column: 1 /span 3;
+  font-size: 2em;
+}
+
+.list{
+  display: none;
+}
+
 }
 
 /*Large Desktop Viewport*/
 @media screen and (min-width: 1921px){
 
+  .list{
+    display: none;
+  }
+
+  .grid{
+    grid-template-columns: 4;
+  }
+
+  aside{
+    grid-column:  1 / span 4;
+    font-size: 3em;
+  }
+
+  .text3 h2{
+    font-size: 3.0em;
+  }
+
+  .text3 p{
+    font-size: 2.5em;
+  }
 
 }
