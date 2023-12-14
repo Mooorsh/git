@@ -92,7 +92,7 @@ main{
   clear: left;
   padding-top: 2em;
   display: block;
-  font-family: 'Rubik Bubbles';
+  font-family: 'Hedvig Letters ';
 }
 
 .title{
@@ -103,31 +103,6 @@ main{
   margin-bottom: 15px;
 }
 
-aside{
-  text-align: center;
-  font-size: 1.5em;
-  color: white;
-  font-weight: bold;
-  text-shadow: 4px 4px 10px black;
-}
-
-
-figure{
-  border: 4px solid #2a1f14;
-  box-shadow: 6px 6px 10px lightblue;
-  max-width: 400px;
-  margin: 2% auto;
-}
-
-figcaption{
-  padding: 2%;
-  border-top: 4px solid #2a1f14;
-  color: white;
-  font-size: 1.15em;
-}
-
-
-
 .container {
   display: grid;
   align-items: center;
@@ -137,24 +112,6 @@ figcaption{
   padding-bottom: 50px;
   padding-left: 15%;
   background-color: grey;
- }
-
- .grid{
-  width: 100%;
- }
-
- .text {
-   padding-left: 25%;
-   width: 150%;
- }
-
- .text h2{
-  text-align: center;
- }
-
- .text p{
-  text-align: center;
-  font-size: 1.5em;
  }
 
  .container2 {
@@ -174,6 +131,59 @@ figcaption{
   padding-left: 15%;
  }
 
+ .grid{
+  width: 100%;
+ }
+
+ table{
+  border: 3px solid white;
+  border-collapse: collapse;
+  margin: 0 auto 0 auto;
+}
+
+caption{
+  font-size: 3.0em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+th{
+  border: 3px solid black;
+  padding: 1%;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+}
+
+td{
+  border: 3px solid black;
+  padding: 1%;
+  font-size: 1.5em;
+background-color: white;
+}
+
+.post:any-link{
+  color: lightblue;
+}
+
+.post:hover{
+  color: red;
+}
+
+ .text {
+  padding-left: 25%;
+  width: 150%;
+}
+
+.text h2{
+ text-align: center;
+}
+
+.text p{
+ text-align: center;
+ font-size: 1.5em;
+}
+
  .text3{
   padding-left: 25%;
   width: 150%;
@@ -189,7 +199,6 @@ figcaption{
   font-size: 1.5em;
   color: white;
  }
-
 
  .text2{
   padding-left: 25%;
@@ -207,12 +216,53 @@ figcaption{
   color: white;
  }
 
+ aside{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px black;
+}
+
+
+figure{
+  border: 4px solid #2a1f14;
+  box-shadow: 6px 6px 6px lightblue;
+  max-width: 400px;
+  margin: 2% auto;
+}
+
+figure:nth-child(odd){
+  box-shadow: 6px 6px 6px white;
+}
+
+figcaption{
+  padding: 2%;
+  border-top: 4px solid #2a1f14;
+  color: white;
+  font-size: 1.15em;
+}
+
 Image{
   padding-top: 25px;
 }
 
 
 /*Footer*/
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: black;
+  color: #f6eee4;
+  padding: 1% 0% 1% 0%;
+  text-decoration: none;
+  }
+
+  footer a {
+      color: #f3e6d8;
+      text-decoration: none;
+  }
 
 
 /*Media Viewport for mobile*/
@@ -225,6 +275,10 @@ Image{
 
   .tab.desk{
     display: block;
+  }
+
+  .desktop{
+    display: none;
   }
 
 /*Nav Area*/
@@ -267,25 +321,6 @@ Image{
       font-size: 1.5em;
     }
 
-    aside {
-      display: none;
-    }
-
-    .list{
-      text-align: center;
-    }
-
-    .list h2{
-      color: white;
-      font-size: 3.0em;
-    }
-
-    ul.a{
-        list-style-type: square white;
-        color: white;
-        font-size: 2.0em;
-    }
-
     .container{
       display: block;
       grid-template-columns: 1fr;
@@ -295,45 +330,21 @@ Image{
        align-items: center;
     }
 
-    .container3{
-      display: block;
-      grid-template-columns: 1fr;
-      padding-top: 25px;
-      padding-bottom: 50px;
-       padding-left: 30px;
-       align-items: center;
-    }
-
-.grid{
-    display: grid;
-  grid-template-columns: 1;
-  grid-gap: 20px;
-}
-
-aside{
-  grid-column: 1 /span 1;
-  font-size: 2em;
-}
-    .text {
-      padding-left: 0% ;
-      width: 95%;
-    }
-
-    .text p{
-      font-size: 1.0em;
-    }
-
-    .Image1{
-      width: 95%;
-      padding-left: 0px;
-    }
-
     .container2{
       display: block;
       grid-template-columns: 1fr;
       padding-top: 25px;
       padding-bottom: 50px;
        padding-left: 12px;
+       align-items: center;
+    }
+
+    .container3{
+      display: block;
+      grid-template-columns: 1fr;
+      padding-top: 25px;
+      padding-bottom: 50px;
+       padding-left: 30px;
        align-items: center;
     }
 
@@ -361,12 +372,47 @@ aside{
       color: white;
     }
 
-    .Image2{
+    .grid{
+      display: grid;
+    grid-template-columns: 1;
+    grid-gap: 20px;
+  }
+
+  aside{
+    grid-column: 1 /span 1;
+    font-size: 2em;
+  }
+
+  aside {
+      display: none;
+    }
+
+  .list{
+      text-align: center;
+    }
+
+  .list h2{
+      color: white;
+      font-size: 3.0em;
+    }
+
+  ul.a{
+        list-style-type: square white;
+        color: white;
+        font-size: 2.0em;
+    }
+
+  .Image1{
+      width: 95%;
+      padding-left: 0px;
+    }
+
+  .Image2{
       width: 95%;
       padding-left: 5px;
     }
 
-    .Image3{
+  .Image3{
       padding-right: 6%;
     }
 
@@ -391,6 +437,8 @@ aside{
   .list{
     display: none;
   }
+
+
 /*Nav Content*/
 
   nav ul{
@@ -483,6 +531,35 @@ aside{
     color: white;
   }
 
+  table{
+    border: 3px solid white;
+    border-collapse: collapse;
+    margin: 0 auto 0 auto;
+  }
+
+  .div{
+    padding-top: 10px;
+  }
+  caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th{
+    border: 3px solid black;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    font-size: 1.0em;
+  }
+
+  td{
+    border: 3px solid black;
+    padding: 1%;
+    font-size: 1.0em;
+  background-color: white;
+  }
 
   .Image2{
     width: 95%;
