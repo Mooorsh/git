@@ -353,6 +353,16 @@ footer {
        align-items: center;
     }
 
+    .text{
+      padding-left: 0% ;
+      width: 95%;
+    }
+
+    .text p{
+      font-size: 1.0em;
+    }
+
+
     .text2{
       padding-left: 0% ;
       width: 95%;
