@@ -192,6 +192,7 @@ background-color: white;
  .text3 h2{
   text-align: center;
   color: white;
+  font-size: 3.0em;
  }
 
  .text3 p{
@@ -241,6 +242,10 @@ figcaption{
   border-top: 4px solid #2a1f14;
   color: white;
   font-size: 1.15em;
+}
+
+caption{
+  color: white;
 }
 
 Image{
@@ -397,7 +402,6 @@ footer {
     }
 
   ul.a{
-        list-style-type: square white;
         color: white;
         font-size: 2.0em;
     }
@@ -547,7 +551,7 @@ aside{
   }
 
   th{
-    border: 3px solid black;
+    border: 3px solid;
     padding: 1%;
     background-color: black;
     color: white;
@@ -626,7 +630,7 @@ aside{
   }
 
   .text3 h2{
-    font-size: 3.0em;
+    font-size: 4.0em;
   }
 
   .text3 p{
